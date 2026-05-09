@@ -1,0 +1,31 @@
+modLoader = "javafml"
+loaderVersion = "[4,)"
+license = "MIT"
+issueTrackerURL = "https://github.com/LPettay/terrain-diffusion-stub/issues"
+
+[[mods]]
+modId = "terrain-diffusion-mc"
+version = "0.1.0"
+displayName = "Terrain Diffusion Loader Stub"
+description = '''
+NeoForge stub mod that registers the terrain-diffusion-mc:terrain_diffusion BiomeSource
+and DensityFunction codec types as no-ops, plus the custom biomes and dimension types,
+so worlds pre-generated on Fabric Terrain Diffusion can load on a NeoForge 1.21.1 server.
+
+Worldborder must be set to the pre-generated area; this stub does NOT generate new chunks.
+'''
+authors = "LPettay"
+
+[[dependencies.terrain-diffusion-mc]]
+modId = "neoforge"
+type = "required"
+versionRange = "[21.1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.terrain-diffusion-mc]]
+modId = "minecraft"
+type = "required"
+versionRange = "[1.21.1,1.22)"
+ordering = "NONE"
+side = "BOTH"
